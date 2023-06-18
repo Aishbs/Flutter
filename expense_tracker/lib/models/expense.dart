@@ -4,6 +4,8 @@ const uuid = Uuid();
 
 enum Category {food, travel, leisure, work}
 
+
+
 class Expense {
   Expense({
     required this.title,
