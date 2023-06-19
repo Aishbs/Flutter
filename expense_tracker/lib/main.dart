@@ -20,6 +20,13 @@ void main() {
           color: kdarkColorScheeme.secondaryContainer,
           margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
         ),
+        textTheme: ThemeData().textTheme.copyWith(
+              titleLarge: TextStyle(
+                fontWeight: FontWeight.normal,
+                color: kdarkColorScheeme.onSecondaryContainer,
+                fontSize: 14,
+              ),
+            ),
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
             backgroundColor: kdarkColorScheeme.primaryContainer,

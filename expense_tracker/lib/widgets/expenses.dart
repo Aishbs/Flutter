@@ -45,12 +45,13 @@ class _ExpensesState extends State<Expenses> {
         duration: const Duration(seconds: 3),
         content: const Text('Expense Deleted'),
         action: SnackBarAction(
-            label: 'Undo',
-            onPressed: () {
-              setState(() {
-                _registeredExpenses.insert(expenseIndex, expense);
-              });
-            }),
+          label: 'Undo',
+          onPressed: () {
+            setState(() {
+              _registeredExpenses.insert(expenseIndex, expense);
+            });
+          },
+        ),
       ),
     );
   }
@@ -79,7 +80,6 @@ class _ExpensesState extends State<Expenses> {
 
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 129, 4, 224),
         title: const Text('Flutter ExpenseTracker'),
         actions: [
           IconButton(
