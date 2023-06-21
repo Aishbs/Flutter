@@ -5,7 +5,7 @@ class UIUpdatesDemo extends StatefulWidget {
 
   @override
   StatefulElement createElement() {
-    print('UIUpdatesDemo CREATEELEMENT called');
+    print('UIUpdatesDemo CREATE ELEMENT called');
     return super.createElement();
   }
 
